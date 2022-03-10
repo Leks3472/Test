@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CalculatorSimple {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         System.out.println("Введите выражение");
         Scanner scan = new Scanner(System.in);
         var expr = scan.nextLine();
