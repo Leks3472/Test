@@ -105,12 +105,10 @@ public class CalculatorClass {
                 result = aInt * cInt;
                 break;
             case '/':
-                // Здесь проверка деления на 0, но так как диапозон вводимых значений не включает 0, то проверка выключена
-                //  if (b == 0)
-                //      System.out.println("Error");
-                //  else {
+                // Здесь проверка деления на 0, но так как диапозон вводимых значений не включает 0, то проверка не реализована
+
                 result = aInt / cInt;
-                //                      }
+
                 break;
         }
         return Integer.toString(result);
