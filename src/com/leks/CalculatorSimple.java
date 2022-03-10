@@ -12,6 +12,7 @@ public class CalculatorSimple {
         expr = expr.replaceAll("\\s+", "");
         var i = 0;
         var n = 0;
+        var count = 0;
         var firstOperand = ""; // первая часть выражения
         char action = 0; // действие
         var secondOperand = ""; // вторая часть выражения
@@ -20,6 +21,11 @@ public class CalculatorSimple {
             if (expr.charAt(i) == '+' || expr.charAt(i) == '-' || expr.charAt(i) == '*' || expr.charAt(i) == '/') {
                 action = expr.charAt(i);
                 n = i;
+                count++;
+                if (count > 1) {
+                    System.out.println("Введено выражение с более, чем одним оператором");
+                    System.exit(0);
+                }
             }
             i++;
         }
