@@ -9,6 +9,5 @@ public class Calculator {
         var expr = scan.nextLine();
         CalculatorClass calculator = new CalculatorClass();
         System.out.println(calculator.calc(expr));
-
     }
 }

@@ -10,7 +10,7 @@ public class CalculatorClass {
         var count = 0;
         var firstOperand = ""; // первая часть выражения
         char action = 0; // действие
-        var secondOperand = ""; // вторая часть выражения
+        var secondOperand = "";  // вторая часть выражения
         //нахождение оператора
         while (i < input.length()) {
             if (input.charAt(i) == '+' || input.charAt(i) == '-' || input.charAt(i) == '*' || input.charAt(i) == '/') {
